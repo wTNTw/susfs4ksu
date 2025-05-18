@@ -39,7 +39,7 @@
 
 ## Build sus_su userspace tool (Deprecated) ##
 **--Important Notes--**
-- sus_su userspace tool is now deprecated, as newer xiaomi devices are found to have a root detection service running which is named "mrmd" and it is spawned by init process, and since sus_su mounted by overlayfs can't be umounted for process spawned by init process, so it will get detected unless there is a better umount scheme for init spawned process.
+- sus_su userspace tool is now deprecated, as newer xiaomi devices are found to have a root detection service running which is named "mrmd" and it is spawned by init process, 和 since sus_su mounted by overlayfs can't be umounted for process spawned by init process, so it will get detected unless there is a better umount scheme for init spawned process.
 
 **--Instruction for 1st mode (Deprecated)--**
 - sus_su userspace tool is an executable aimed to get a root shell by sending a request to a susfs fifo driver, this is exclusive for **"kprobe hook enabled KSU"** only, **DO NOT** use it if your KernelSU has kprobe **disabled**.
@@ -92,12 +92,3 @@
 ## Credits ##
 - KernelSU: https://github.com/tiann/KernelSU
 - KernelSU fork: https://github.com/5ec1cff/KernelSU
-- @Kartatz: for ideas and original commit from https://github.com/Dominium-Apum/kernel_xiaomi_chime/pull/1/commits/74f8d4ecacd343432bb8137b7e7fbe3fd9fef189
-
-## Telegram ##
-- @simonpunk
-
-
-## Buy me a coffee ##
-- PayPal: kingjeffkimo@yahoo.com.tw
-- BTC: bc1qgkwvsfln02463zpjf7z6tds8xnpeykggtgk4kw
